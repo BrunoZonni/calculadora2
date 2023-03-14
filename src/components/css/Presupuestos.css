@@ -1,0 +1,80 @@
+.presupuestos__table {
+    width: 100%;
+    padding: 10px;
+    min-width: 600px;
+}
+
+.presupuestostHead tr,
+.presupuestostBody tr,
+.presupuestostFoot tr {
+    font-size: 12px;
+    padding: 10px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+    gap: 10px;
+    text-align: end;
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    color: 'black';
+    letter-spacing: 1px;
+}
+
+.presupuestostHead tr{
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.center{
+    text-align: center;
+}
+
+.presupuestostFoot tr{
+    grid-template-columns: 2fr 2fr 4fr 2fr;
+    font-weight: bold;
+}
+
+.presupuestostFoot tr th:nth-last-child(2){
+    font-weight: 800;
+    font-size: 14px;
+}
+
+
+.textPEsoTotal{
+    background-color: #0baeae;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+}
+.textPEsoTotal span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.textDineroTotal {
+    background-color: #3c1f68;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+
+.textExtra{
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 750px) {
+    .data{ 
+        overflow-x: scroll;
+    }
+}
